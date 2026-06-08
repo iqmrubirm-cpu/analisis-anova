@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de varianza para dos factores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="IMG/img.jpg" alt="michi" class="logo"> 
+        <h1>ANOVA</h1>
+        <p>Análisis de varianza para dos factores</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Desarrollo</h2>
+            <p>
+                En la siguiente tabla se tiene los resultados, donde el factor A se considera el factor η, y el factor B se considera el factor θ, en la última columna se encuentran las respuestas.
+Para un análisis de varianza con dos factores, con tres niveles para el factor A, dos para el factor B y 3 réplicas, con un total de 18 respuestas.
+En donde H0 es:<br>
+1) No hay interacción significativa entre el factor A y el factor B.<br>
+2) No hay diferencias significativas en la media entre los niveles del primer factor A.<br>
+3) No hay diferencias significativas en la media entre los niveles del segundo factor B.
+            </p>
+            <img src="IMG/TABLA NO 1.PNG" alt="TABLA NO. 1">
+        </section>
+
+        <section>
+            <h2>Promedios</h2>
+            <p>
+                Ahora se calcula el promedio de cada uno de los niveles del factor A y B.
+            </p>
+            <img src="IMG/GRAFICA PROMEDIOS.PNG" alt="Gráfica promedios">
+        </section>
+
+        <section>
+            <h2>Tabla ANOVA</h2>
+            <p>
+                Para el factor A, el estadístico F tiene un valor de 748.742 y el valor de p obtenido es de 2.52465*10^-13, un valor muy pequeño, por lo que p es significativo, entonces se rechaza H0.
+De manera similar, para el factor B, el estadístico F tiene un valor de 2240.51 y el valor calculado de p es de 5.21805*10^-15 siendo un valor muy pequeño, por lo que p es significativo, entonces se rechaza H0, por lo tanto, hay diferencias significativas entre las medias del factor B, como consecuencia, provocan un gran desplazamiento al cambiar del nivel 1 al nivel 2 y viceversa.
+Finalmente, la interacción entre ambos factores está dado por ηθ, donde el valor de F = 748.742 y el valor de p = 6.88363*10^-10, como p tiene un valor muy pequeño, es significativo, entonces sí existe una interacción entre los factores A y B.
+            </p>
+            <img src="IMG/TABLA ANOVA.PNG" alt="TABLA ANOVA">
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Referencias</li>
+            <li>[1] Wikipedia. (2026, abril 19). Análisis de la varianza. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/An%C3%A1lisis_de_la_varianza</li>
+            <li>[2] RPUBS - Ejercicio Anova de 2 vías. (s. f.). https://rpubs.com/luis_fernandez_bernal/anova_2_vias#:~:text=El%20an%C3%A1lisis%20de%20varianza%20de,cada%20uno%20con%20varios%20niveles.</li>
+        </ul>
+        <p></p>
+    </footer>
+
+</body>
+</html>
